@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        body {
+            /* margin: 0%; */
+            /* padding: 0%; */
+            font-style: Roboto, Arial, sans-serif;
+            color: white;
+        }
+        .card {
+            display: flex;
+            width: 1000px;
+            height: 135px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.814);
+            /* border: 2px solid black; */
+            /* justify-content: center;  */
+            /* align-items: center;  */
+        }
+        .image img {
+            width: 240px;
+            margin: auto;
+        }
+        .text h1 {
+            font-size: x-large;
+        }
+        .text h1, p {
+            padding: 10px 10px;
+            margin: 0%;
+        }
+        .image {
+            position: relative;
+        }
+        .capsule {
+            position: absolute;
+            bottom: 0.5rem;
+            z-index: 10;
+            right: 0.5rem;
+            background: #000000c7;
+            color: white;
+            padding: 2px;
+            border-radius: 3px;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="card.png">
+                <div class="capsule">30:20</div>
+            </div>
+            <div class="text">
+                <h1>MERN Stack Developer 50+ LPA | Sigma Web Dev - Tutorial #3</h1>
+                <p>CodeWithKaran <span>&#8226;</span> 786K views <span>&#8226;</span> 2 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
