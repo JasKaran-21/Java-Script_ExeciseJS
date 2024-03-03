@@ -1,0 +1,74 @@
+<!-- Create a glowing bulb effect using class list toggle method in javascript. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Bulb</title>
+    <style>
+        body {
+            background: #000;
+        }
+
+        /* Styling for the container holding the bulb and switch */
+        .container {
+            padding: 50px 0 0 300px;
+            height: 100vh;
+        }
+
+        /* Styling for the bulb container */
+        #bulb {
+            width: 200px;
+            height: 240px;
+            background: rgb(59, 59, 59);
+            border-radius: 50% 50% 0 0;
+            margin: 50px;
+            position: relative;
+        }
+
+        /* Styling for the light inside the bulb */
+        #light {
+            width: 120px;
+            height: 120px;
+            background: rgb(255, 255, 110);
+            position: absolute;
+            margin: 40px;
+            border-radius: 50%;
+        }
+
+        /* Styling for the switch button */
+        #switchBtn {
+            background: rgb(228, 188, 29);
+            cursor: pointer;
+            padding: 20px 50px;
+            border-radius: 10px;
+            margin: 0 0 0 58px;
+            font-size: 20px;
+        }
+
+        /* Styling for the glow effect */
+        .glow {
+            box-shadow: 0 0 100px 50px rgb(255, 255, 110);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="bulb">
+            <div id="light"></div>
+        </div>
+            <button id="switchBtn" onclick="toggleGlow()"><b>ON / OFF</b></button>
+    </div>
+
+    <script>
+        // JS function to toggle the glow effect on the light.
+        function toggleGlow() {
+            let light = document.getElementById("light");    // Get the light element by its id
+            light.classList.toggle("glow");                  // Toggle the "glow" class, which applies the box-shadow effect.
+        }
+    </script>
+</body>
+</html>
+
+
