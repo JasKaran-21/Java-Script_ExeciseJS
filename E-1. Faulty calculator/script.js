@@ -13,7 +13,7 @@ It performs wrong operations 10% of the times.
 ----------------------------------------------------------------  */
 
 
-console.log("Faulty Calculator  Video - 59, 61");
+console.log("Faulty Calculator");
 
 
 let random = Math.random()                   //It is a function, that's result show between 0-1 . The result is 10% of time wrong.
